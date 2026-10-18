@@ -1,0 +1,49 @@
+{
+  "measuredAt": "2026-10-17T23:11:16.114Z",
+  "environment": "Local Windows / Node 24 / native PostgreSQL 17, single client, warm cache",
+  "limitations": "Synthetic temporary table benchmark, not an end-to-end capacity test. Does not measure PostGIS, pgvector, concurrent users, SSE fanout or production latency.",
+  "results": [
+    {
+      "syntheticRows": 10000,
+      "query": "recent page",
+      "runs": 20,
+      "medianMs": 0.4,
+      "p95Ms": 0.75
+    },
+    {
+      "syntheticRows": 10000,
+      "query": "viewport count",
+      "runs": 20,
+      "medianMs": 0.51,
+      "p95Ms": 0.77
+    },
+    {
+      "syntheticRows": 10000,
+      "query": "full-text page",
+      "runs": 20,
+      "medianMs": 0.17,
+      "p95Ms": 0.38
+    },
+    {
+      "syntheticRows": 100000,
+      "query": "recent page",
+      "runs": 20,
+      "medianMs": 0.41,
+      "p95Ms": 1.27
+    },
+    {
+      "syntheticRows": 100000,
+      "query": "viewport count",
+      "runs": 20,
+      "medianMs": 10.87,
+      "p95Ms": 13.33
+    },
+    {
+      "syntheticRows": 100000,
+      "query": "full-text page",
+      "runs": 20,
+      "medianMs": 0.37,
+      "p95Ms": 0.57
+    }
+  ]
+}

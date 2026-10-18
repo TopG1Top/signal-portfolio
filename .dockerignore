@@ -1,0 +1,13 @@
+node_modules
+**/.next
+**/.next-production
+**/.next-portfolio
+**/.next-portfolio-dev
+.vercel
+.data
+.env
+**/.env.local
+test-results
+playwright-report
+**/*.log
+.git

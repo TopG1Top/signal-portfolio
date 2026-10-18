@@ -1,0 +1,452 @@
+generator client {
+  provider = "prisma-client"
+  output   = "./generated"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime? @db.Timestamptz(6)
+  refreshTokenExpiresAt DateTime? @db.Timestamptz(6)
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now()) @db.Timestamptz(6)
+  updatedAt             DateTime  @default(now()) @db.Timestamptz(6)
+  user                  user      @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@unique([providerId, accountId])
+}
+
+model ai_analyses {
+  id         String   @id
+  event_id   String?
+  provider   String
+  model      String
+  locale     String
+  result     Json
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  events     events?  @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model ai_usage {
+  id            BigInt   @id @default(autoincrement())
+  user_id       String?
+  provider      String
+  model         String
+  input_tokens  Int?
+  output_tokens Int?
+  created_at    DateTime @default(now()) @db.Timestamptz(6)
+  user          user?    @relation(fields: [user_id], references: [id], onUpdate: NoAction)
+}
+
+model alerts {
+  id           String      @id
+  user_id      String
+  watchlist_id String?
+  event_id     String
+  type         String
+  created_at   DateTime    @default(now()) @db.Timestamptz(6)
+  events       events      @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  user         user        @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  watchlists   watchlists? @relation(fields: [watchlist_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@unique([user_id, watchlist_id, event_id, type])
+}
+
+model articles {
+  id                String           @id
+  source_id         String
+  external_id       String
+  canonical_url     String
+  title             String
+  permitted_excerpt String           @default("")
+  language          String           @default("en")
+  published_at      DateTime         @db.Timestamptz(6)
+  fetched_at        DateTime         @default(now()) @db.Timestamptz(6)
+  content_hash      String
+  news_sources      news_sources     @relation(fields: [source_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  claim_evidence    claim_evidence[]
+  event_articles    event_articles[]
+
+  @@unique([source_id, external_id])
+}
+
+model audit_logs {
+  id         BigInt   @id @default(autoincrement())
+  user_id    String?
+  action     String
+  target     String
+  details    Json     @default("{}")
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  user       user?    @relation(fields: [user_id], references: [id], onUpdate: NoAction)
+}
+
+model categories {
+  id     String   @id
+  color  String   @default("#38bdf8")
+  icon   String   @default("Globe")
+  events events[]
+}
+
+model chat_messages {
+  id            BigInt   @id @default(autoincrement())
+  user_id       String
+  role          String
+  content       String
+  citations     Json     @default("[]")
+  created_at    DateTime @default(now()) @db.Timestamptz(6)
+  mode          String   @default("unknown")
+  provider      String?
+  uncertainties Json     @default("[]")
+  user          user     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model claim_evidence {
+  id            String       @id
+  claim_id      String
+  article_id    String
+  evidence_type String
+  excerpt       String
+  articles      articles     @relation(fields: [article_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  event_claims  event_claims @relation(fields: [claim_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model cluster_decisions {
+  id         BigInt   @id @default(autoincrement())
+  left_id    String
+  right_id   String
+  decision   String
+  scores     Json
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+
+  @@unique([left_id, right_id], map: "cluster_decision_pair")
+}
+
+model entities {
+  id             String           @id
+  name           String
+  type           String
+  event_entities event_entities[]
+
+  @@unique([name, type])
+}
+
+model event_articles {
+  event_id   String
+  article_id String
+  articles   articles @relation(fields: [article_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  events     events   @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([event_id, article_id])
+}
+
+model event_claims {
+  id                  String           @id
+  event_id            String
+  claim               String
+  verification_status String
+  confidence          Float?
+  created_at          DateTime         @default(now()) @db.Timestamptz(6)
+  claim_evidence      claim_evidence[]
+  events              events           @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model event_entities {
+  event_id  String
+  entity_id String
+  entities  entities @relation(fields: [entity_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  events    events   @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([event_id, entity_id])
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model event_locations {
+  id            String   @id
+  event_id      String   @unique
+  name          String
+  country_code  String?
+  region        String?
+  latitude      Float?
+  longitude     Float?
+  precision     String
+  geojson       Json?
+  country_codes String[] @default([])
+  country_basis Json     @default("[]")
+  events        events   @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([longitude, latitude], map: "location_bounds")
+  @@index([country_codes], map: "event_locations_countries", type: Gin)
+}
+
+model event_relations {
+  id                                     String  @id
+  from_id                                String
+  to_id                                  String
+  type                                   String
+  explanation                            String
+  evidence_url                           String?
+  score                                  Float?
+  events_event_relations_from_idToevents events  @relation("event_relations_from_idToevents", fields: [from_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  events_event_relations_to_idToevents   events  @relation("event_relations_to_idToevents", fields: [to_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@unique([from_id, to_id, type])
+}
+
+model event_updates {
+  id          BigInt   @id @default(autoincrement())
+  event_id    String
+  created_at  DateTime @default(now()) @db.Timestamptz(6)
+  type        String
+  description String
+  events      events   @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model event_versions {
+  id           BigInt   @id @default(autoincrement())
+  event_id     String
+  recorded_at  DateTime @default(now()) @db.Timestamptz(6)
+  snapshot     Json
+  content_hash String
+  events       events   @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([event_id, recorded_at(sort: Desc), id(sort: Desc)], map: "event_versions_replay")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model events {
+  id                                              String                   @id
+  title                                           String
+  summary                                         String
+  category                                        String
+  status                                          String                   @default("developing")
+  relevance_score                                 Float
+  verification_status                             String                   @default("source_reported")
+  occurred_at                                     DateTime                 @db.Timestamptz(6)
+  first_detected_at                               DateTime                 @default(now()) @db.Timestamptz(6)
+  last_updated_at                                 DateTime                 @default(now()) @db.Timestamptz(6)
+  source_id                                       String
+  magnitude                                       Float?
+  synthetic                                       Boolean                  @default(false)
+  search_vector                                   Unsupported("tsvector")? @default(dbgenerated("to_tsvector('simple'::regconfig, ((title || ' '::text) || summary))"))
+  merged_into                                     String?
+  time_basis                                      String                   @default("provider_event")
+  ai_analyses                                     ai_analyses[]
+  alerts                                          alerts[]
+  event_articles                                  event_articles[]
+  event_claims                                    event_claims[]
+  event_entities                                  event_entities[]
+  event_locations                                 event_locations?
+  event_relations_event_relations_from_idToevents event_relations[]        @relation("event_relations_from_idToevents")
+  event_relations_event_relations_to_idToevents   event_relations[]        @relation("event_relations_to_idToevents")
+  event_updates                                   event_updates[]
+  event_versions                                  event_versions[]
+  categories                                      categories               @relation(fields: [category], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  events                                          events?                  @relation("eventsToevents", fields: [merged_into], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  other_events                                    events[]                 @relation("eventsToevents")
+  news_sources                                    news_sources             @relation(fields: [source_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  notifications                                   notifications[]
+  outbox                                          outbox[]
+  saved_events                                    saved_events[]
+
+  @@index([category, occurred_at(sort: Desc)], map: "events_category")
+  @@index([search_vector], map: "events_search", type: Gin)
+  @@index([synthetic, occurred_at(sort: Desc)], map: "events_time")
+  @@index([merged_into], map: "events_merged_into")
+}
+
+model ingestion_jobs {
+  id           String       @id
+  source_id    String
+  status       String
+  started_at   DateTime     @default(now()) @db.Timestamptz(6)
+  completed_at DateTime?    @db.Timestamptz(6)
+  imported     Int          @default(0)
+  unchanged    Int          @default(0)
+  rejected     Int          @default(0)
+  error        String?
+  duration_ms  Int?
+  news_sources news_sources @relation(fields: [source_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model news_sources {
+  id             String           @id
+  name           String
+  type           String
+  endpoint       String
+  enabled        Boolean          @default(true)
+  poll_interval  Int              @default(300)
+  timeout_ms     Int              @default(20000)
+  rate_limit     Int              @default(12)
+  retries        Int              @default(3)
+  last_success   DateTime?        @db.Timestamptz(6)
+  last_attempt   DateTime?        @db.Timestamptz(6)
+  status         String           @default("pending")
+  error          String?
+  license        String
+  articles       articles[]
+  events         events[]
+  ingestion_jobs ingestion_jobs[]
+  raw_items      raw_items[]
+}
+
+model notification_deliveries {
+  id              String        @id
+  notification_id String
+  channel         String
+  status          String
+  attempts        Int           @default(0)
+  created_at      DateTime      @default(now()) @db.Timestamptz(6)
+  notifications   notifications @relation(fields: [notification_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model notifications {
+  id                      String                    @id
+  user_id                 String
+  event_id                String?
+  title                   String
+  read                    Boolean                   @default(false)
+  created_at              DateTime                  @default(now()) @db.Timestamptz(6)
+  dedupe_key              String                    @unique
+  notification_deliveries notification_deliveries[]
+  events                  events?                   @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  user                    user                      @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([user_id, created_at(sort: Desc)], map: "notification_user_time")
+}
+
+model outbox {
+  id         BigInt   @id @default(autoincrement())
+  type       String
+  event_id   String?
+  payload    Json
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  events     events?  @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([created_at], map: "outbox_created")
+}
+
+model rateLimit {
+  id          String @id
+  key         String @unique
+  count       Int
+  lastRequest BigInt
+}
+
+model rate_limits {
+  key        String   @id
+  count      Int
+  expires_at DateTime @db.Timestamptz(6)
+}
+
+model raw_items {
+  id           String       @id
+  source_id    String
+  external_id  String
+  content_hash String
+  payload      Json
+  fetched_at   DateTime     @default(now()) @db.Timestamptz(6)
+  news_sources news_sources @relation(fields: [source_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@unique([source_id, external_id, content_hash])
+}
+
+model saved_events {
+  user_id    String
+  event_id   String
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  events     events   @relation(fields: [event_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  user       user     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@id([user_id, event_id])
+}
+
+model schema_migrations {
+  name       String    @id
+  applied_at DateTime? @default(now()) @db.Timestamptz(6)
+}
+
+model session {
+  id        String   @id
+  expiresAt DateTime @db.Timestamptz(6)
+  token     String   @unique
+  createdAt DateTime @default(now()) @db.Timestamptz(6)
+  updatedAt DateTime @default(now()) @db.Timestamptz(6)
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      user     @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([userId], map: "idx_session_user")
+}
+
+model system_settings {
+  key   String @id
+  value Json
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model user {
+  id               String            @id
+  name             String
+  email            String            @unique
+  emailVerified    Boolean           @default(false)
+  image            String?
+  createdAt        DateTime          @default(now()) @db.Timestamptz(6)
+  updatedAt        DateTime          @default(now()) @db.Timestamptz(6)
+  role             String            @default("user")
+  account          account[]
+  ai_usage         ai_usage[]
+  alerts           alerts[]
+  audit_logs       audit_logs[]
+  chat_messages    chat_messages[]
+  notifications    notifications[]
+  saved_events     saved_events[]
+  session          session[]
+  user_preferences user_preferences?
+  watchlists       watchlists[]
+}
+
+model user_preferences {
+  user_id        String  @id
+  locale         String  @default("en")
+  theme          String  @default("dark")
+  alerts_enabled Boolean @default(true)
+  quiet_start    Int?
+  quiet_end      Int?
+  timezone       String  @default("UTC")
+  user           user    @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model verification {
+  id         String    @id
+  identifier String
+  value      String
+  expiresAt  DateTime  @db.Timestamptz(6)
+  createdAt  DateTime? @default(now()) @db.Timestamptz(6)
+  updatedAt  DateTime? @default(now()) @db.Timestamptz(6)
+}
+
+model watchlists {
+  id         String   @id
+  user_id    String
+  name       String
+  keywords   String   @default("")
+  category   String   @default("")
+  source     String   @default("")
+  enabled    Boolean  @default(true)
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  alerts     alerts[]
+  user       user     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([user_id], map: "watchlist_user")
+}

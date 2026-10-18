@@ -1,0 +1,1516 @@
+[
+  {
+    "code": "FJ",
+    "name": "Fiji",
+    "nameDe": "Fidschi",
+    "continent": "Oceania",
+    "bbox": [-180, -18.28799, 180, -16.020882],
+    "aliases": ["Fiji", "Fidschi", "Fidji", "Figi", "Fiyi"]
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania",
+    "nameDe": "Tansania",
+    "continent": "Africa",
+    "bbox": [29.339998, -11.720938, 40.31659, -0.95],
+    "aliases": ["Tanzania", "Tansania", "Tanzanie", "Tanzania", "Tanzania"]
+  },
+  {
+    "code": "EH",
+    "name": "Western Sahara",
+    "nameDe": "Westsahara",
+    "continent": "Africa",
+    "bbox": [-17.063423, 20.999752, -8.665124, 27.656426],
+    "aliases": [
+      "Western Sahara",
+      "Westsahara",
+      "Sahara occidental",
+      "Sahara Occidentale",
+      "Sahara Occidental"
+    ]
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "nameDe": "Kanada",
+    "continent": "North America",
+    "bbox": [-140.99778, 41.675105, -52.648099, 83.23324],
+    "aliases": ["Canada", "Kanada", "Canada", "Canada", "Canadá"]
+  },
+  {
+    "code": "US",
+    "name": "United States of America",
+    "nameDe": "Vereinigte Staaten",
+    "continent": "North America",
+    "bbox": [-171.791111, 18.91619, -66.96466, 71.357764],
+    "aliases": [
+      "United States of America",
+      "Vereinigte Staaten",
+      "États-Unis",
+      "Stati Uniti d'America",
+      "Estados Unidos"
+    ]
+  },
+  {
+    "code": "KZ",
+    "name": "Kazakhstan",
+    "nameDe": "Kasachstan",
+    "continent": "Asia",
+    "bbox": [46.466446, 40.662325, 87.35997, 55.38525],
+    "aliases": ["Kazakhstan", "Kasachstan", "Kazakhstan", "Kazakistan", "Kazajistán"]
+  },
+  {
+    "code": "UZ",
+    "name": "Uzbekistan",
+    "nameDe": "Usbekistan",
+    "continent": "Asia",
+    "bbox": [55.928917, 37.144994, 73.055417, 45.586804],
+    "aliases": ["Uzbekistan", "Usbekistan", "Ouzbékistan", "Uzbekistan", "Uzbekistán"]
+  },
+  {
+    "code": "PG",
+    "name": "Papua New Guinea",
+    "nameDe": "Papua-Neuguinea",
+    "continent": "Oceania",
+    "bbox": [141.00021, -10.652476, 156.019965, -2.500002],
+    "aliases": [
+      "Papua New Guinea",
+      "Papua-Neuguinea",
+      "Papouasie-Nouvelle-Guinée",
+      "Papua Nuova Guinea",
+      "Papúa Nueva Guinea"
+    ]
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "nameDe": "Indonesien",
+    "continent": "Asia",
+    "bbox": [95.293026, -10.359987, 141.033852, 5.479821],
+    "aliases": ["Indonesia", "Indonesien", "Indonésie", "Indonesia", "Indonesia"]
+  },
+  {
+    "code": "AR",
+    "name": "Argentina",
+    "nameDe": "Argentinien",
+    "continent": "South America",
+    "bbox": [-73.415436, -55.25, -53.628349, -21.83231],
+    "aliases": ["Argentina", "Argentinien", "Argentine", "Argentina", "Argentina"]
+  },
+  {
+    "code": "CL",
+    "name": "Chile",
+    "nameDe": "Chile",
+    "continent": "South America",
+    "bbox": [-75.644395, -55.61183, -66.95992, -17.580012],
+    "aliases": ["Chile", "Chile", "Chili", "Cile", "Chile"]
+  },
+  {
+    "code": "CD",
+    "name": "Democratic Republic of the Congo",
+    "nameDe": "Demokratische Republik Kongo",
+    "continent": "Africa",
+    "bbox": [12.182337, -13.257227, 31.174149, 5.256088],
+    "aliases": [
+      "Democratic Republic of the Congo",
+      "Demokratische Republik Kongo",
+      "République démocratique du Congo",
+      "Repubblica Democratica del Congo",
+      "República Democrática del Congo"
+    ]
+  },
+  {
+    "code": "SO",
+    "name": "Somalia",
+    "nameDe": "Somalia",
+    "continent": "Africa",
+    "bbox": [40.98105, -1.68325, 51.13387, 12.02464],
+    "aliases": ["Somalia", "Somalia", "Somalie", "Somalia", "Somalia"]
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "nameDe": "Kenia",
+    "continent": "Africa",
+    "bbox": [33.893569, -4.67677, 41.855083, 5.506],
+    "aliases": ["Kenya", "Kenia", "Kenya", "Kenya", "Kenia"]
+  },
+  {
+    "code": "SD",
+    "name": "Sudan",
+    "nameDe": "Sudan",
+    "continent": "Africa",
+    "bbox": [21.93681, 8.229188, 38.41009, 22],
+    "aliases": ["Sudan", "Sudan", "Soudan", "Sudan", "Sudán"]
+  },
+  {
+    "code": "TD",
+    "name": "Chad",
+    "nameDe": "Tschad",
+    "continent": "Africa",
+    "bbox": [13.540394, 7.421925, 23.88689, 23.40972],
+    "aliases": ["Chad", "Tschad", "Tchad", "Ciad", "Chad"]
+  },
+  {
+    "code": "HT",
+    "name": "Haiti",
+    "nameDe": "Haiti",
+    "continent": "North America",
+    "bbox": [-74.458034, 18.030993, -71.624873, 19.915684],
+    "aliases": ["Haiti", "Haiti", "Haïti", "Haiti", "Haití"]
+  },
+  {
+    "code": "DO",
+    "name": "Dominican Republic",
+    "nameDe": "Dominikanische Republik",
+    "continent": "North America",
+    "bbox": [-71.945112, 17.598564, -68.317943, 19.884911],
+    "aliases": [
+      "Dominican Republic",
+      "Dominikanische Republik",
+      "République dominicaine",
+      "Repubblica Dominicana",
+      "República Dominicana"
+    ]
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "nameDe": "Russland",
+    "continent": "Europe",
+    "bbox": [-180, 41.151416, 180, 81.2504],
+    "aliases": ["Russia", "Russland", "Russie", "Russia", "Rusia"]
+  },
+  {
+    "code": "BS",
+    "name": "The Bahamas",
+    "nameDe": "Bahamas",
+    "continent": "North America",
+    "bbox": [-78.98, 23.71, -77, 27.04],
+    "aliases": ["The Bahamas", "Bahamas", "Bahamas", "Bahamas", "Bahamas"]
+  },
+  {
+    "code": "FK",
+    "name": "Falkland Islands",
+    "nameDe": "Falklandinseln",
+    "continent": "South America",
+    "bbox": [-61.2, -52.3, -57.75, -51.1],
+    "aliases": [
+      "Falkland Islands",
+      "Falklandinseln",
+      "îles Malouines",
+      "Isole Falkland",
+      "Islas Malvinas"
+    ]
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "nameDe": "Norwegen",
+    "continent": "Europe",
+    "bbox": [4.992078, 58.078884, 31.293418, 80.657144],
+    "aliases": ["Norway", "Norwegen", "Norvège", "Norvegia", "Noruega"]
+  },
+  {
+    "code": "GL",
+    "name": "Greenland",
+    "nameDe": "Grönland",
+    "continent": "North America",
+    "bbox": [-73.297, 60.03676, -12.20855, 83.64513],
+    "aliases": ["Greenland", "Grönland", "Groenland", "Groenlandia", "Groenlandia"]
+  },
+  {
+    "code": "TF",
+    "name": "French Southern and Antarctic Lands",
+    "nameDe": "Französische Süd- und Antarktisgebiete",
+    "continent": "Seven seas (open ocean)",
+    "bbox": [68.72, -49.775, 70.56, -48.625],
+    "aliases": [
+      "French Southern and Antarctic Lands",
+      "Französische Süd- und Antarktisgebiete",
+      "Terres australes et antarctiques françaises",
+      "Terre australi e antartiche francesi",
+      "Tierras Australes y Antárticas Francesas"
+    ]
+  },
+  {
+    "code": "TL",
+    "name": "East Timor",
+    "nameDe": "Osttimor",
+    "continent": "Asia",
+    "bbox": [124.968682, -9.393173, 127.335928, -8.273345],
+    "aliases": ["East Timor", "Osttimor", "Timor oriental", "Timor Est", "Timor Oriental"]
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "nameDe": "Südafrika",
+    "continent": "Africa",
+    "bbox": [16.344977, -34.819166, 32.83012, -22.091313],
+    "aliases": ["South Africa", "Südafrika", "Afrique du Sud", "Sudafrica", "Sudáfrica"]
+  },
+  {
+    "code": "LS",
+    "name": "Lesotho",
+    "nameDe": "Lesotho",
+    "continent": "Africa",
+    "bbox": [26.999262, -30.645106, 29.325166, -28.647502],
+    "aliases": ["Lesotho", "Lesotho", "Lesotho", "Lesotho", "Lesoto"]
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "nameDe": "Mexiko",
+    "continent": "North America",
+    "bbox": [-117.12776, 14.538829, -86.811982, 32.72083],
+    "aliases": ["Mexico", "Mexiko", "Mexique", "Messico", "México"]
+  },
+  {
+    "code": "UY",
+    "name": "Uruguay",
+    "nameDe": "Uruguay",
+    "continent": "South America",
+    "bbox": [-58.427074, -34.952647, -53.209589, -30.109686],
+    "aliases": ["Uruguay", "Uruguay", "Uruguay", "Uruguay", "Uruguay"]
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "nameDe": "Brasilien",
+    "continent": "South America",
+    "bbox": [-73.987235, -33.768378, -34.729993, 5.244486],
+    "aliases": ["Brazil", "Brasilien", "Brésil", "Brasile", "Brasil"]
+  },
+  {
+    "code": "BO",
+    "name": "Bolivia",
+    "nameDe": "Bolivien",
+    "continent": "South America",
+    "bbox": [-69.590424, -22.872919, -57.498371, -9.761988],
+    "aliases": ["Bolivia", "Bolivien", "Bolivie", "Bolivia", "Bolivia"]
+  },
+  {
+    "code": "PE",
+    "name": "Peru",
+    "nameDe": "Peru",
+    "continent": "South America",
+    "bbox": [-81.410943, -18.347975, -68.66508, -0.057205],
+    "aliases": ["Peru", "Peru", "Pérou", "Perù", "Perú"]
+  },
+  {
+    "code": "CO",
+    "name": "Colombia",
+    "nameDe": "Kolumbien",
+    "continent": "South America",
+    "bbox": [-78.990935, -4.298187, -66.876326, 12.437303],
+    "aliases": ["Colombia", "Kolumbien", "Colombie", "Colombia", "Colombia"]
+  },
+  {
+    "code": "PA",
+    "name": "Panama",
+    "nameDe": "Panama",
+    "continent": "North America",
+    "bbox": [-82.965783, 7.220541, -77.242566, 9.61161],
+    "aliases": ["Panama", "Panama", "Panama", "Panama", "Panamá"]
+  },
+  {
+    "code": "CR",
+    "name": "Costa Rica",
+    "nameDe": "Costa Rica",
+    "continent": "North America",
+    "bbox": [-85.941725, 8.225028, -82.546196, 11.217119],
+    "aliases": ["Costa Rica", "Costa Rica", "Costa Rica", "Costa Rica", "Costa Rica"]
+  },
+  {
+    "code": "NI",
+    "name": "Nicaragua",
+    "nameDe": "Nicaragua",
+    "continent": "North America",
+    "bbox": [-87.668493, 10.726839, -83.147219, 15.016267],
+    "aliases": ["Nicaragua", "Nicaragua", "Nicaragua", "Nicaragua", "Nicaragua"]
+  },
+  {
+    "code": "HN",
+    "name": "Honduras",
+    "nameDe": "Honduras",
+    "continent": "North America",
+    "bbox": [-89.353326, 12.984686, -83.147219, 16.005406],
+    "aliases": ["Honduras", "Honduras", "Honduras", "Honduras", "Honduras"]
+  },
+  {
+    "code": "SV",
+    "name": "El Salvador",
+    "nameDe": "El Salvador",
+    "continent": "North America",
+    "bbox": [-90.095555, 13.149017, -87.723503, 14.424133],
+    "aliases": ["El Salvador", "El Salvador", "Salvador", "El Salvador", "El Salvador"]
+  },
+  {
+    "code": "GT",
+    "name": "Guatemala",
+    "nameDe": "Guatemala",
+    "continent": "North America",
+    "bbox": [-92.229249, 13.735338, -88.225023, 17.819326],
+    "aliases": ["Guatemala", "Guatemala", "Guatemala", "Guatemala", "Guatemala"]
+  },
+  {
+    "code": "BZ",
+    "name": "Belize",
+    "nameDe": "Belize",
+    "continent": "North America",
+    "bbox": [-89.229122, 15.886938, -88.106813, 18.499982],
+    "aliases": ["Belize", "Belize", "Belize", "Belize", "Belice"]
+  },
+  {
+    "code": "VE",
+    "name": "Venezuela",
+    "nameDe": "Venezuela",
+    "continent": "South America",
+    "bbox": [-73.304952, 0.724452, -59.758285, 12.162307],
+    "aliases": ["Venezuela", "Venezuela", "Venezuela", "Venezuela", "Venezuela"]
+  },
+  {
+    "code": "GY",
+    "name": "Guyana",
+    "nameDe": "Guyana",
+    "continent": "South America",
+    "bbox": [-61.410303, 1.268088, -56.539386, 8.367035],
+    "aliases": ["Guyana", "Guyana", "Guyana", "Guyana", "Guyana"]
+  },
+  {
+    "code": "SR",
+    "name": "Suriname",
+    "nameDe": "Suriname",
+    "continent": "South America",
+    "bbox": [-58.044694, 1.817667, -53.958045, 6.025291],
+    "aliases": ["Suriname", "Suriname", "Suriname", "Suriname", "Surinam"]
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "nameDe": "Frankreich",
+    "continent": "Europe",
+    "bbox": [-54.524754, 2.053389, 9.560016, 51.148506],
+    "aliases": ["France", "Frankreich", "France", "Francia", "Francia"]
+  },
+  {
+    "code": "EC",
+    "name": "Ecuador",
+    "nameDe": "Ecuador",
+    "continent": "South America",
+    "bbox": [-80.967765, -4.959129, -75.233723, 1.380924],
+    "aliases": ["Ecuador", "Ecuador", "Équateur", "Ecuador", "Ecuador"]
+  },
+  {
+    "code": "PR",
+    "name": "Puerto Rico",
+    "nameDe": "Puerto Rico",
+    "continent": "North America",
+    "bbox": [-67.242428, 17.946553, -65.591004, 18.520601],
+    "aliases": ["Puerto Rico", "Puerto Rico", "Porto Rico", "Porto Rico", "Puerto Rico"]
+  },
+  {
+    "code": "JM",
+    "name": "Jamaica",
+    "nameDe": "Jamaika",
+    "continent": "North America",
+    "bbox": [-78.337719, 17.701116, -76.199659, 18.524218],
+    "aliases": ["Jamaica", "Jamaika", "Jamaïque", "Giamaica", "Jamaica"]
+  },
+  {
+    "code": "CU",
+    "name": "Cuba",
+    "nameDe": "Kuba",
+    "continent": "North America",
+    "bbox": [-84.974911, 19.855481, -74.178025, 23.188611],
+    "aliases": ["Cuba", "Kuba", "Cuba", "Cuba", "Cuba"]
+  },
+  {
+    "code": "ZW",
+    "name": "Zimbabwe",
+    "nameDe": "Simbabwe",
+    "continent": "Africa",
+    "bbox": [25.264226, -22.271612, 32.849861, -15.507787],
+    "aliases": ["Zimbabwe", "Simbabwe", "Zimbabwe", "Zimbabwe", "Zimbabue"]
+  },
+  {
+    "code": "BW",
+    "name": "Botswana",
+    "nameDe": "Botswana",
+    "continent": "Africa",
+    "bbox": [19.895458, -26.828543, 29.432188, -17.661816],
+    "aliases": ["Botswana", "Botswana", "Botswana", "Botswana", "Botsuana"]
+  },
+  {
+    "code": "NA",
+    "name": "Namibia",
+    "nameDe": "Namibia",
+    "continent": "Africa",
+    "bbox": [11.734199, -29.045462, 25.084443, -16.941343],
+    "aliases": ["Namibia", "Namibia", "Namibie", "Namibia", "Namibia"]
+  },
+  {
+    "code": "SN",
+    "name": "Senegal",
+    "nameDe": "Senegal",
+    "continent": "Africa",
+    "bbox": [-17.625043, 12.33209, -11.467899, 16.598264],
+    "aliases": ["Senegal", "Senegal", "Sénégal", "Senegal", "Senegal"]
+  },
+  {
+    "code": "ML",
+    "name": "Mali",
+    "nameDe": "Mali",
+    "continent": "Africa",
+    "bbox": [-12.17075, 10.096361, 4.27021, 24.974574],
+    "aliases": ["Mali", "Mali", "Mali", "Mali", "Malí"]
+  },
+  {
+    "code": "MR",
+    "name": "Mauritania",
+    "nameDe": "Mauretanien",
+    "continent": "Africa",
+    "bbox": [-17.063423, 14.616834, -4.923337, 27.395744],
+    "aliases": ["Mauritania", "Mauretanien", "Mauritanie", "Mauritania", "Mauritania"]
+  },
+  {
+    "code": "BJ",
+    "name": "Benin",
+    "nameDe": "Benin",
+    "continent": "Africa",
+    "bbox": [0.772336, 6.142158, 3.797112, 12.235636],
+    "aliases": ["Benin", "Benin", "Bénin", "Benin", "Benín"]
+  },
+  {
+    "code": "NE",
+    "name": "Niger",
+    "nameDe": "Niger",
+    "continent": "Africa",
+    "bbox": [0.295646, 11.660167, 15.903247, 23.471668],
+    "aliases": ["Niger", "Niger", "Niger", "Niger", "Níger"]
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "nameDe": "Nigeria",
+    "continent": "Africa",
+    "bbox": [2.691702, 4.240594, 14.577178, 13.865924],
+    "aliases": ["Nigeria", "Nigeria", "Nigeria", "Nigeria", "Nigeria"]
+  },
+  {
+    "code": "CM",
+    "name": "Cameroon",
+    "nameDe": "Kamerun",
+    "continent": "Africa",
+    "bbox": [8.488816, 1.727673, 16.012852, 12.859396],
+    "aliases": ["Cameroon", "Kamerun", "Cameroun", "Camerun", "Camerún"]
+  },
+  {
+    "code": "TG",
+    "name": "Togo",
+    "nameDe": "Togo",
+    "continent": "Africa",
+    "bbox": [-0.049785, 5.928837, 1.865241, 11.018682],
+    "aliases": ["Togo", "Togo", "Togo", "Togo", "Togo"]
+  },
+  {
+    "code": "GH",
+    "name": "Ghana",
+    "nameDe": "Ghana",
+    "continent": "Africa",
+    "bbox": [-3.24437, 4.710462, 1.060122, 11.098341],
+    "aliases": ["Ghana", "Ghana", "Ghana", "Ghana", "Ghana"]
+  },
+  {
+    "code": "CI",
+    "name": "Ivory Coast",
+    "nameDe": "Elfenbeinküste",
+    "continent": "Africa",
+    "bbox": [-8.60288, 4.338288, -2.56219, 10.524061],
+    "aliases": [
+      "Ivory Coast",
+      "Elfenbeinküste",
+      "Côte d'Ivoire",
+      "Costa d'Avorio",
+      "Costa de Marfil"
+    ]
+  },
+  {
+    "code": "GN",
+    "name": "Guinea",
+    "nameDe": "Guinea",
+    "continent": "Africa",
+    "bbox": [-15.130311, 7.309037, -7.8321, 12.586183],
+    "aliases": ["Guinea", "Guinea", "Guinée", "Guinea", "Guinea"]
+  },
+  {
+    "code": "GW",
+    "name": "Guinea-Bissau",
+    "nameDe": "Guinea-Bissau",
+    "continent": "Africa",
+    "bbox": [-16.677452, 11.040412, -13.700476, 12.62817],
+    "aliases": ["Guinea-Bissau", "Guinea-Bissau", "Guinée-Bissau", "Guinea-Bissau", "Guinea-Bisáu"]
+  },
+  {
+    "code": "LR",
+    "name": "Liberia",
+    "nameDe": "Liberia",
+    "continent": "Africa",
+    "bbox": [-11.438779, 4.355755, -7.539715, 8.541055],
+    "aliases": ["Liberia", "Liberia", "Liberia", "Liberia", "Liberia"]
+  },
+  {
+    "code": "SL",
+    "name": "Sierra Leone",
+    "nameDe": "Sierra Leone",
+    "continent": "Africa",
+    "bbox": [-13.24655, 6.785917, -10.230094, 10.046984],
+    "aliases": ["Sierra Leone", "Sierra Leone", "Sierra Leone", "Sierra Leone", "Sierra Leona"]
+  },
+  {
+    "code": "BF",
+    "name": "Burkina Faso",
+    "nameDe": "Burkina Faso",
+    "continent": "Africa",
+    "bbox": [-5.470565, 9.610835, 2.177108, 15.116158],
+    "aliases": ["Burkina Faso", "Burkina Faso", "Burkina Faso", "Burkina Faso", "Burkina Faso"]
+  },
+  {
+    "code": "CF",
+    "name": "Central African Republic",
+    "nameDe": "Zentralafrikanische Republik",
+    "continent": "Africa",
+    "bbox": [14.459407, 2.26764, 27.374226, 11.142395],
+    "aliases": [
+      "Central African Republic",
+      "Zentralafrikanische Republik",
+      "République centrafricaine",
+      "Repubblica Centrafricana",
+      "República Centroafricana"
+    ]
+  },
+  {
+    "code": "CG",
+    "name": "Republic of the Congo",
+    "nameDe": "Republik Kongo",
+    "continent": "Africa",
+    "bbox": [11.093773, -5.037987, 18.453065, 3.728197],
+    "aliases": [
+      "Republic of the Congo",
+      "Republik Kongo",
+      "République du Congo",
+      "Repubblica del Congo",
+      "República del Congo"
+    ]
+  },
+  {
+    "code": "GA",
+    "name": "Gabon",
+    "nameDe": "Gabun",
+    "continent": "Africa",
+    "bbox": [8.797996, -3.978827, 14.425456, 2.326758],
+    "aliases": ["Gabon", "Gabun", "Gabon", "Gabon", "Gabón"]
+  },
+  {
+    "code": "GQ",
+    "name": "Equatorial Guinea",
+    "nameDe": "Äquatorialguinea",
+    "continent": "Africa",
+    "bbox": [9.305613, 1.01012, 11.285079, 2.283866],
+    "aliases": [
+      "Equatorial Guinea",
+      "Äquatorialguinea",
+      "Guinée équatoriale",
+      "Guinea Equatoriale",
+      "Guinea Ecuatorial"
+    ]
+  },
+  {
+    "code": "ZM",
+    "name": "Zambia",
+    "nameDe": "Sambia",
+    "continent": "Africa",
+    "bbox": [21.887843, -17.961229, 33.485688, -8.238257],
+    "aliases": ["Zambia", "Sambia", "Zambie", "Zambia", "Zambia"]
+  },
+  {
+    "code": "MW",
+    "name": "Malawi",
+    "nameDe": "Malawi",
+    "continent": "Africa",
+    "bbox": [32.688165, -16.8013, 35.771905, -9.230599],
+    "aliases": ["Malawi", "Malawi", "Malawi", "Malawi", "Malaui"]
+  },
+  {
+    "code": "MZ",
+    "name": "Mozambique",
+    "nameDe": "Mosambik",
+    "continent": "Africa",
+    "bbox": [30.179481, -26.742192, 40.775475, -10.317096],
+    "aliases": ["Mozambique", "Mosambik", "Mozambique", "Mozambico", "Mozambique"]
+  },
+  {
+    "code": "SZ",
+    "name": "Eswatini",
+    "nameDe": "Eswatini",
+    "continent": "Africa",
+    "bbox": [30.676609, -27.285879, 32.071665, -25.660191],
+    "aliases": ["Eswatini", "Eswatini", "Eswatini", "eSwatini", "Suazilandia"]
+  },
+  {
+    "code": "AO",
+    "name": "Angola",
+    "nameDe": "Angola",
+    "continent": "Africa",
+    "bbox": [11.640096, -17.930636, 24.079905, -4.438023],
+    "aliases": ["Angola", "Angola", "Angola", "Angola", "Angola"]
+  },
+  {
+    "code": "BI",
+    "name": "Burundi",
+    "nameDe": "Burundi",
+    "continent": "Africa",
+    "bbox": [29.024926, -4.499983, 30.75224, -2.348487],
+    "aliases": ["Burundi", "Burundi", "Burundi", "Burundi", "Burundi"]
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "nameDe": "Israel",
+    "continent": "Asia",
+    "bbox": [34.265433, 29.501326, 35.836397, 33.277426],
+    "aliases": ["Israel", "Israel", "Israël", "Israele", "Israel"]
+  },
+  {
+    "code": "LB",
+    "name": "Lebanon",
+    "nameDe": "Libanon",
+    "continent": "Asia",
+    "bbox": [35.126053, 33.08904, 36.61175, 34.644914],
+    "aliases": ["Lebanon", "Libanon", "Liban", "Libano", "Líbano"]
+  },
+  {
+    "code": "MG",
+    "name": "Madagascar",
+    "nameDe": "Madagaskar",
+    "continent": "Africa",
+    "bbox": [43.254187, -25.601434, 50.476537, -12.040557],
+    "aliases": ["Madagascar", "Madagaskar", "Madagascar", "Madagascar", "Madagascar"]
+  },
+  {
+    "code": "PS",
+    "name": "Palestine",
+    "nameDe": "Palästina",
+    "continent": "Asia",
+    "bbox": [34.927408, 31.353435, 35.545665, 32.532511],
+    "aliases": ["Palestine", "Palästina", "Palestine", "Palestina", "Palestina"]
+  },
+  {
+    "code": "GM",
+    "name": "The Gambia",
+    "nameDe": "Gambia",
+    "continent": "Africa",
+    "bbox": [-16.841525, 13.130284, -13.844963, 13.876492],
+    "aliases": ["The Gambia", "Gambia", "Gambie", "Gambia", "Gambia"]
+  },
+  {
+    "code": "TN",
+    "name": "Tunisia",
+    "nameDe": "Tunesien",
+    "continent": "Africa",
+    "bbox": [7.524482, 30.307556, 11.488787, 37.349994],
+    "aliases": ["Tunisia", "Tunesien", "Tunisie", "Tunisia", "Túnez"]
+  },
+  {
+    "code": "DZ",
+    "name": "Algeria",
+    "nameDe": "Algerien",
+    "continent": "Africa",
+    "bbox": [-8.6844, 19.057364, 11.999506, 37.118381],
+    "aliases": ["Algeria", "Algerien", "Algérie", "Algeria", "Argelia"]
+  },
+  {
+    "code": "JO",
+    "name": "Jordan",
+    "nameDe": "Jordanien",
+    "continent": "Asia",
+    "bbox": [34.922603, 29.197495, 39.195468, 33.378686],
+    "aliases": ["Jordan", "Jordanien", "Jordanie", "Giordania", "Jordania"]
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "nameDe": "Vereinigte Arabische Emirate",
+    "continent": "Asia",
+    "bbox": [51.579519, 22.496948, 56.396847, 26.055464],
+    "aliases": [
+      "United Arab Emirates",
+      "Vereinigte Arabische Emirate",
+      "Émirats arabes unis",
+      "Emirati Arabi Uniti",
+      "Emiratos Árabes Unidos"
+    ]
+  },
+  {
+    "code": "QA",
+    "name": "Qatar",
+    "nameDe": "Katar",
+    "continent": "Asia",
+    "bbox": [50.743911, 24.556331, 51.6067, 26.114582],
+    "aliases": ["Qatar", "Katar", "Qatar", "Qatar", "Catar"]
+  },
+  {
+    "code": "KW",
+    "name": "Kuwait",
+    "nameDe": "Kuwait",
+    "continent": "Asia",
+    "bbox": [46.568713, 28.526063, 48.416094, 30.05907],
+    "aliases": ["Kuwait", "Kuwait", "Koweït", "Kuwait", "Kuwait"]
+  },
+  {
+    "code": "IQ",
+    "name": "Iraq",
+    "nameDe": "Irak",
+    "continent": "Asia",
+    "bbox": [38.792341, 29.099025, 48.567971, 37.385264],
+    "aliases": ["Iraq", "Irak", "Irak", "Iraq", "Irak"]
+  },
+  {
+    "code": "OM",
+    "name": "Oman",
+    "nameDe": "Oman",
+    "continent": "Asia",
+    "bbox": [52.00001, 16.651051, 59.80806, 26.395934],
+    "aliases": ["Oman", "Oman", "Oman", "Oman", "Omán"]
+  },
+  {
+    "code": "VU",
+    "name": "Vanuatu",
+    "nameDe": "Vanuatu",
+    "continent": "Oceania",
+    "bbox": [166.629137, -16.59785, 167.844877, -14.626497],
+    "aliases": ["Vanuatu", "Vanuatu", "Vanuatu", "Vanuatu", "Vanuatu"]
+  },
+  {
+    "code": "KH",
+    "name": "Cambodia",
+    "nameDe": "Kambodscha",
+    "continent": "Asia",
+    "bbox": [102.348099, 10.486544, 107.614548, 14.570584],
+    "aliases": ["Cambodia", "Kambodscha", "Cambodge", "Cambogia", "Camboya"]
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "nameDe": "Thailand",
+    "continent": "Asia",
+    "bbox": [97.375896, 5.691384, 105.589039, 20.41785],
+    "aliases": ["Thailand", "Thailand", "Thaïlande", "Thailandia", "Tailandia"]
+  },
+  {
+    "code": "LA",
+    "name": "Laos",
+    "nameDe": "Laos",
+    "continent": "Asia",
+    "bbox": [100.115988, 13.881091, 107.564525, 22.464753],
+    "aliases": ["Laos", "Laos", "Laos", "Laos", "Laos"]
+  },
+  {
+    "code": "MM",
+    "name": "Myanmar",
+    "nameDe": "Myanmar",
+    "continent": "Asia",
+    "bbox": [92.303234, 9.93296, 101.180005, 28.335945],
+    "aliases": ["Myanmar", "Myanmar", "Birmanie", "Birmania", "Birmania"]
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "nameDe": "Vietnam",
+    "continent": "Asia",
+    "bbox": [102.170436, 8.59976, 109.33527, 23.352063],
+    "aliases": ["Vietnam", "Vietnam", "Viêt Nam", "Vietnam", "Vietnam"]
+  },
+  {
+    "code": "KP",
+    "name": "North Korea",
+    "nameDe": "Nordkorea",
+    "continent": "Asia",
+    "bbox": [124.265625, 37.669071, 130.780007, 42.985387],
+    "aliases": ["North Korea", "Nordkorea", "Corée du Nord", "Corea del Nord", "Corea del Norte"]
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "nameDe": "Südkorea",
+    "continent": "Asia",
+    "bbox": [126.117398, 34.390046, 129.468304, 38.612243],
+    "aliases": ["South Korea", "Südkorea", "Corée du Sud", "Corea del Sud", "Corea del Sur"]
+  },
+  {
+    "code": "MN",
+    "name": "Mongolia",
+    "nameDe": "Mongolei",
+    "continent": "Asia",
+    "bbox": [87.751264, 41.59741, 119.772824, 52.047366],
+    "aliases": ["Mongolia", "Mongolei", "Mongolie", "Mongolia", "Mongolia"]
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "nameDe": "Indien",
+    "continent": "Asia",
+    "bbox": [68.176645, 7.965535, 97.402561, 35.49401],
+    "aliases": ["India", "Indien", "Inde", "India", "India"]
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "nameDe": "Bangladesch",
+    "continent": "Asia",
+    "bbox": [88.084422, 20.670883, 92.672721, 26.446526],
+    "aliases": ["Bangladesh", "Bangladesch", "Bangladesh", "Bangladesh", "Bangladés"]
+  },
+  {
+    "code": "BT",
+    "name": "Bhutan",
+    "nameDe": "Bhutan",
+    "continent": "Asia",
+    "bbox": [88.814248, 26.719403, 92.103712, 28.296439],
+    "aliases": ["Bhutan", "Bhutan", "Bhoutan", "Bhutan", "Bután"]
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "nameDe": "Nepal",
+    "continent": "Asia",
+    "bbox": [80.088425, 26.397898, 88.174804, 30.422717],
+    "aliases": ["Nepal", "Nepal", "Népal", "Nepal", "Nepal"]
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "nameDe": "Pakistan",
+    "continent": "Asia",
+    "bbox": [60.874248, 23.691965, 77.837451, 37.133031],
+    "aliases": ["Pakistan", "Pakistan", "Pakistan", "Pakistan", "Pakistán"]
+  },
+  {
+    "code": "AF",
+    "name": "Afghanistan",
+    "nameDe": "Afghanistan",
+    "continent": "Asia",
+    "bbox": [60.52843, 29.318572, 75.158028, 38.486282],
+    "aliases": ["Afghanistan", "Afghanistan", "Afghanistan", "Afghanistan", "Afganistán"]
+  },
+  {
+    "code": "TJ",
+    "name": "Tajikistan",
+    "nameDe": "Tadschikistan",
+    "continent": "Asia",
+    "bbox": [67.44222, 36.738171, 74.980002, 40.960213],
+    "aliases": ["Tajikistan", "Tadschikistan", "Tadjikistan", "Tagikistan", "Tayikistán"]
+  },
+  {
+    "code": "KG",
+    "name": "Kyrgyzstan",
+    "nameDe": "Kirgisistan",
+    "continent": "Asia",
+    "bbox": [69.464887, 39.279463, 80.25999, 43.298339],
+    "aliases": ["Kyrgyzstan", "Kirgisistan", "Kirghizistan", "Kirghizistan", "Kirguistán"]
+  },
+  {
+    "code": "TM",
+    "name": "Turkmenistan",
+    "nameDe": "Turkmenistan",
+    "continent": "Asia",
+    "bbox": [52.50246, 35.270664, 66.54615, 42.751551],
+    "aliases": ["Turkmenistan", "Turkmenistan", "Turkménistan", "Turkmenistan", "Turkmenistán"]
+  },
+  {
+    "code": "IR",
+    "name": "Iran",
+    "nameDe": "Iran",
+    "continent": "Asia",
+    "bbox": [44.109225, 25.078237, 63.316632, 39.713003],
+    "aliases": ["Iran", "Iran", "Iran", "Iran", "Irán"]
+  },
+  {
+    "code": "SY",
+    "name": "Syria",
+    "nameDe": "Syrien",
+    "continent": "Asia",
+    "bbox": [35.700798, 32.312938, 42.349591, 37.229873],
+    "aliases": ["Syria", "Syrien", "Syrie", "Siria", "Siria"]
+  },
+  {
+    "code": "AM",
+    "name": "Armenia",
+    "nameDe": "Armenien",
+    "continent": "Asia",
+    "bbox": [43.582746, 38.741201, 46.50572, 41.248129],
+    "aliases": ["Armenia", "Armenien", "Arménie", "Armenia", "Armenia"]
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "nameDe": "Schweden",
+    "continent": "Europe",
+    "bbox": [11.027369, 55.361737, 23.903379, 69.106247],
+    "aliases": ["Sweden", "Schweden", "Suède", "Svezia", "Suecia"]
+  },
+  {
+    "code": "BY",
+    "name": "Belarus",
+    "nameDe": "Belarus",
+    "continent": "Europe",
+    "bbox": [23.199494, 51.319503, 32.693643, 56.16913],
+    "aliases": ["Belarus", "Belarus", "Biélorussie", "Bielorussia", "Bielorrusia"]
+  },
+  {
+    "code": "UA",
+    "name": "Ukraine",
+    "nameDe": "Ukraine",
+    "continent": "Europe",
+    "bbox": [22.085608, 45.293308, 40.080789, 52.335075],
+    "aliases": ["Ukraine", "Ukraine", "Ukraine", "Ucraina", "Ucrania"]
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "nameDe": "Polen",
+    "continent": "Europe",
+    "bbox": [14.074521, 49.027395, 24.029986, 54.851536],
+    "aliases": ["Poland", "Polen", "Pologne", "Polonia", "Polonia"]
+  },
+  {
+    "code": "AT",
+    "name": "Austria",
+    "nameDe": "Österreich",
+    "continent": "Europe",
+    "bbox": [9.47997, 46.431817, 16.979667, 49.039074],
+    "aliases": ["Austria", "Österreich", "Autriche", "Austria", "Austria"]
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "nameDe": "Ungarn",
+    "continent": "Europe",
+    "bbox": [16.202298, 45.759481, 22.710531, 48.623854],
+    "aliases": ["Hungary", "Ungarn", "Hongrie", "Ungheria", "Hungría"]
+  },
+  {
+    "code": "MD",
+    "name": "Moldova",
+    "nameDe": "Republik Moldau",
+    "continent": "Europe",
+    "bbox": [26.619337, 45.488283, 30.024659, 48.467119],
+    "aliases": ["Moldova", "Republik Moldau", "Moldavie", "Moldavia", "Moldavia"]
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "nameDe": "Rumänien",
+    "continent": "Europe",
+    "bbox": [20.220192, 43.688445, 29.626543, 48.220881],
+    "aliases": ["Romania", "Rumänien", "Roumanie", "Romania", "Rumania"]
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "nameDe": "Litauen",
+    "continent": "Europe",
+    "bbox": [21.0558, 53.905702, 26.588279, 56.372528],
+    "aliases": ["Lithuania", "Litauen", "Lituanie", "Lituania", "Lituania"]
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "nameDe": "Lettland",
+    "continent": "Europe",
+    "bbox": [21.0558, 55.615107, 28.176709, 57.970157],
+    "aliases": ["Latvia", "Lettland", "Lettonie", "Lettonia", "Letonia"]
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "nameDe": "Estland",
+    "continent": "Europe",
+    "bbox": [23.339795, 57.474528, 28.131699, 59.61109],
+    "aliases": ["Estonia", "Estland", "Estonie", "Estonia", "Estonia"]
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "nameDe": "Deutschland",
+    "continent": "Europe",
+    "bbox": [5.988658, 47.302488, 15.016996, 54.983104],
+    "aliases": ["Germany", "Deutschland", "Allemagne", "Germania", "Alemania"]
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "nameDe": "Bulgarien",
+    "continent": "Europe",
+    "bbox": [22.380526, 41.234486, 28.558081, 44.234923],
+    "aliases": ["Bulgaria", "Bulgarien", "Bulgarie", "Bulgaria", "Bulgaria"]
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "nameDe": "Griechenland",
+    "continent": "Europe",
+    "bbox": [20.150016, 34.919988, 26.604196, 41.826905],
+    "aliases": ["Greece", "Griechenland", "Grèce", "Grecia", "Grecia"]
+  },
+  {
+    "code": "TR",
+    "name": "Turkey",
+    "nameDe": "Türkei",
+    "continent": "Asia",
+    "bbox": [26.043351, 35.821535, 44.79399, 42.141485],
+    "aliases": ["Turkey", "Türkei", "Turquie", "Turchia", "Turquía"]
+  },
+  {
+    "code": "AL",
+    "name": "Albania",
+    "nameDe": "Albanien",
+    "continent": "Europe",
+    "bbox": [19.304486, 39.624998, 21.02004, 42.688247],
+    "aliases": ["Albania", "Albanien", "Albanie", "Albania", "Albania"]
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "nameDe": "Kroatien",
+    "continent": "Europe",
+    "bbox": [13.656976, 42.479991, 19.390476, 46.503751],
+    "aliases": ["Croatia", "Kroatien", "Croatie", "Croazia", "Croacia"]
+  },
+  {
+    "code": "CH",
+    "name": "Switzerland",
+    "nameDe": "Schweiz",
+    "continent": "Europe",
+    "bbox": [6.022609, 45.776948, 10.442701, 47.830828],
+    "aliases": ["Switzerland", "Schweiz", "Suisse", "Svizzera", "Suiza"]
+  },
+  {
+    "code": "LU",
+    "name": "Luxembourg",
+    "nameDe": "Luxemburg",
+    "continent": "Europe",
+    "bbox": [5.674052, 49.442667, 6.242751, 50.128052],
+    "aliases": ["Luxembourg", "Luxemburg", "Luxembourg", "Lussemburgo", "Luxemburgo"]
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "nameDe": "Belgien",
+    "continent": "Europe",
+    "bbox": [2.513573, 49.529484, 6.156658, 51.475024],
+    "aliases": ["Belgium", "Belgien", "Belgique", "Belgio", "Bélgica"]
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "nameDe": "Niederlande",
+    "continent": "Europe",
+    "bbox": [3.314971, 50.803721, 7.092053, 53.510403],
+    "aliases": ["Netherlands", "Niederlande", "Pays-Bas", "Paesi Bassi", "Países Bajos"]
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "nameDe": "Portugal",
+    "continent": "Europe",
+    "bbox": [-9.526571, 36.838269, -6.389088, 42.280469],
+    "aliases": ["Portugal", "Portugal", "Portugal", "Portogallo", "Portugal"]
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "nameDe": "Spanien",
+    "continent": "Europe",
+    "bbox": [-9.392884, 35.94685, 3.039484, 43.748338],
+    "aliases": ["Spain", "Spanien", "Espagne", "Spagna", "España"]
+  },
+  {
+    "code": "IE",
+    "name": "Ireland",
+    "nameDe": "Irland",
+    "continent": "Europe",
+    "bbox": [-9.977086, 51.669301, -6.032985, 55.131622],
+    "aliases": ["Ireland", "Irland", "Irlande", "Irlanda", "Irlanda"]
+  },
+  {
+    "code": "NC",
+    "name": "New Caledonia",
+    "nameDe": "Neukaledonien",
+    "continent": "Oceania",
+    "bbox": [164.029606, -22.399976, 167.120011, -20.105646],
+    "aliases": [
+      "New Caledonia",
+      "Neukaledonien",
+      "Nouvelle-Calédonie",
+      "Nuova Caledonia",
+      "Nueva Caledonia"
+    ]
+  },
+  {
+    "code": "SB",
+    "name": "Solomon Islands",
+    "nameDe": "Salomonen",
+    "continent": "Oceania",
+    "bbox": [156.491358, -10.826367, 162.398646, -6.599338],
+    "aliases": ["Solomon Islands", "Salomonen", "Îles Salomon", "Isole Salomone", "Islas Salomón"]
+  },
+  {
+    "code": "NZ",
+    "name": "New Zealand",
+    "nameDe": "Neuseeland",
+    "continent": "Oceania",
+    "bbox": [166.509144, -46.641235, 178.517094, -34.450662],
+    "aliases": ["New Zealand", "Neuseeland", "Nouvelle-Zélande", "Nuova Zelanda", "Nueva Zelanda"]
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "nameDe": "Australien",
+    "continent": "Oceania",
+    "bbox": [113.338953, -43.634597, 153.569469, -10.668186],
+    "aliases": ["Australia", "Australien", "Australie", "Australia", "Australia"]
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "nameDe": "Sri Lanka",
+    "continent": "Asia",
+    "bbox": [79.695167, 5.96837, 81.787959, 9.824078],
+    "aliases": ["Sri Lanka", "Sri Lanka", "Sri Lanka", "Sri Lanka", "Sri Lanka"]
+  },
+  {
+    "code": "CN",
+    "name": "People's Republic of China",
+    "nameDe": "Volksrepublik China",
+    "continent": "Asia",
+    "bbox": [73.675379, 18.197701, 135.026311, 53.4588],
+    "aliases": [
+      "People's Republic of China",
+      "Volksrepublik China",
+      "République populaire de Chine",
+      "Cina",
+      "China"
+    ]
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "nameDe": "Republik China",
+    "continent": "Asia",
+    "bbox": [120.106189, 21.970571, 121.951244, 25.295459],
+    "aliases": ["Taiwan", "Republik China", "Taïwan", "Taiwan", "República de China"]
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "nameDe": "Italien",
+    "continent": "Europe",
+    "bbox": [6.749955, 36.619987, 18.480247, 47.115393],
+    "aliases": ["Italy", "Italien", "Italie", "Italia", "Italia"]
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "nameDe": "Dänemark",
+    "continent": "Europe",
+    "bbox": [8.089977, 54.800015, 12.690006, 57.730017],
+    "aliases": ["Denmark", "Dänemark", "Danemark", "Danimarca", "Dinamarca"]
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "nameDe": "Vereinigtes Königreich",
+    "continent": "Europe",
+    "bbox": [-7.572168, 49.96, 1.681531, 58.635],
+    "aliases": [
+      "United Kingdom",
+      "Vereinigtes Königreich",
+      "Royaume-Uni",
+      "Regno Unito",
+      "Reino Unido"
+    ]
+  },
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "nameDe": "Island",
+    "continent": "Europe",
+    "bbox": [-24.326184, 63.496383, -13.609732, 66.526792],
+    "aliases": ["Iceland", "Island", "Islande", "Islanda", "Islandia"]
+  },
+  {
+    "code": "AZ",
+    "name": "Azerbaijan",
+    "nameDe": "Aserbaidschan",
+    "continent": "Asia",
+    "bbox": [44.79399, 38.270378, 50.392821, 41.860675],
+    "aliases": ["Azerbaijan", "Aserbaidschan", "Azerbaïdjan", "Azerbaigian", "Azerbaiyán"]
+  },
+  {
+    "code": "GE",
+    "name": "Georgia",
+    "nameDe": "Georgien",
+    "continent": "Asia",
+    "bbox": [39.955009, 41.064445, 46.637908, 43.553104],
+    "aliases": ["Georgia", "Georgien", "Géorgie", "Georgia", "Georgia"]
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "nameDe": "Philippinen",
+    "continent": "Asia",
+    "bbox": [117.174275, 5.581003, 126.537424, 18.505227],
+    "aliases": ["Philippines", "Philippinen", "Philippines", "Filippine", "Filipinas"]
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "nameDe": "Malaysia",
+    "continent": "Asia",
+    "bbox": [100.085757, 0.773131, 119.181904, 6.928053],
+    "aliases": ["Malaysia", "Malaysia", "Malaisie", "Malaysia", "Malasia"]
+  },
+  {
+    "code": "BN",
+    "name": "Brunei",
+    "nameDe": "Brunei",
+    "continent": "Asia",
+    "bbox": [114.204017, 4.007637, 115.45071, 5.44773],
+    "aliases": ["Brunei", "Brunei", "Brunei", "Brunei", "Brunéi"]
+  },
+  {
+    "code": "SI",
+    "name": "Slovenia",
+    "nameDe": "Slowenien",
+    "continent": "Europe",
+    "bbox": [13.69811, 45.452316, 16.564808, 46.852386],
+    "aliases": ["Slovenia", "Slowenien", "Slovénie", "Slovenia", "Eslovenia"]
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "nameDe": "Finnland",
+    "continent": "Europe",
+    "bbox": [20.645593, 59.846373, 31.516092, 70.164193],
+    "aliases": ["Finland", "Finnland", "Finlande", "Finlandia", "Finlandia"]
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "nameDe": "Slowakei",
+    "continent": "Europe",
+    "bbox": [16.879983, 47.758429, 22.558138, 49.571574],
+    "aliases": ["Slovakia", "Slowakei", "Slovaquie", "Slovacchia", "Eslovaquia"]
+  },
+  {
+    "code": "CZ",
+    "name": "Czech Republic",
+    "nameDe": "Tschechien",
+    "continent": "Europe",
+    "bbox": [12.240111, 48.555305, 18.853144, 51.117268],
+    "aliases": ["Czech Republic", "Tschechien", "Tchéquie", "Repubblica Ceca", "República Checa"]
+  },
+  {
+    "code": "ER",
+    "name": "Eritrea",
+    "nameDe": "Eritrea",
+    "continent": "Africa",
+    "bbox": [36.32322, 12.455416, 43.081226, 17.998307],
+    "aliases": ["Eritrea", "Eritrea", "Érythrée", "Eritrea", "Eritrea"]
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "nameDe": "Japan",
+    "continent": "Asia",
+    "bbox": [129.408463, 31.029579, 145.543137, 45.551483],
+    "aliases": ["Japan", "Japan", "Japon", "Giappone", "Japón"]
+  },
+  {
+    "code": "PY",
+    "name": "Paraguay",
+    "nameDe": "Paraguay",
+    "continent": "South America",
+    "bbox": [-62.685057, -27.548499, -54.29296, -19.342747],
+    "aliases": ["Paraguay", "Paraguay", "Paraguay", "Paraguay", "Paraguay"]
+  },
+  {
+    "code": "YE",
+    "name": "Yemen",
+    "nameDe": "Jemen",
+    "continent": "Asia",
+    "bbox": [42.604873, 12.58595, 53.108573, 19.000003],
+    "aliases": ["Yemen", "Jemen", "Yémen", "Yemen", "Yemen"]
+  },
+  {
+    "code": "SA",
+    "name": "Saudi Arabia",
+    "nameDe": "Saudi-Arabien",
+    "continent": "Asia",
+    "bbox": [34.632336, 16.347891, 55.666659, 32.161009],
+    "aliases": [
+      "Saudi Arabia",
+      "Saudi-Arabien",
+      "Arabie saoudite",
+      "Arabia Saudita",
+      "Arabia Saudita"
+    ]
+  },
+  {
+    "code": "AQ",
+    "name": "Antarctica",
+    "nameDe": "Antarktika",
+    "continent": "Antarctica",
+    "bbox": [-180, -90, 180, -63.27066],
+    "aliases": ["Antarctica", "Antarktika", "Antarctique", "Antartide", "Antártida"]
+  },
+  {
+    "code": "CY",
+    "name": "Cyprus",
+    "nameDe": "Republik Zypern",
+    "continent": "Asia",
+    "bbox": [32.256667, 34.571869, 34.004881, 35.173125],
+    "aliases": ["Cyprus", "Republik Zypern", "Chypre", "Cipro", "Chipre"]
+  },
+  {
+    "code": "MA",
+    "name": "Morocco",
+    "nameDe": "Marokko",
+    "continent": "Africa",
+    "bbox": [-17.020428, 21.420734, -1.124551, 35.759988],
+    "aliases": ["Morocco", "Marokko", "Maroc", "Marocco", "Marruecos"]
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "nameDe": "Ägypten",
+    "continent": "Africa",
+    "bbox": [24.70007, 22, 36.86623, 31.58568],
+    "aliases": ["Egypt", "Ägypten", "Égypte", "Egitto", "Egipto"]
+  },
+  {
+    "code": "LY",
+    "name": "Libya",
+    "nameDe": "Libyen",
+    "continent": "Africa",
+    "bbox": [9.319411, 19.58047, 25.16482, 33.136996],
+    "aliases": ["Libya", "Libyen", "Libye", "Libia", "Libia"]
+  },
+  {
+    "code": "ET",
+    "name": "Ethiopia",
+    "nameDe": "Äthiopien",
+    "continent": "Africa",
+    "bbox": [32.95418, 3.42206, 47.78942, 14.95943],
+    "aliases": ["Ethiopia", "Äthiopien", "Éthiopie", "Etiopia", "Etiopía"]
+  },
+  {
+    "code": "DJ",
+    "name": "Djibouti",
+    "nameDe": "Dschibuti",
+    "continent": "Africa",
+    "bbox": [41.66176, 10.926879, 43.317852, 12.699639],
+    "aliases": ["Djibouti", "Dschibuti", "Djibouti", "Gibuti", "Yibuti"]
+  },
+  {
+    "code": "UG",
+    "name": "Uganda",
+    "nameDe": "Uganda",
+    "continent": "Africa",
+    "bbox": [29.579466, -1.443322, 35.03599, 4.249885],
+    "aliases": ["Uganda", "Uganda", "Ouganda", "Uganda", "Uganda"]
+  },
+  {
+    "code": "RW",
+    "name": "Rwanda",
+    "nameDe": "Ruanda",
+    "continent": "Africa",
+    "bbox": [29.024926, -2.917858, 30.816135, -1.134659],
+    "aliases": ["Rwanda", "Ruanda", "Rwanda", "Ruanda", "Ruanda"]
+  },
+  {
+    "code": "BA",
+    "name": "Bosnia and Herzegovina",
+    "nameDe": "Bosnien und Herzegowina",
+    "continent": "Europe",
+    "bbox": [15.750026, 42.65, 19.59976, 45.233777],
+    "aliases": [
+      "Bosnia and Herzegovina",
+      "Bosnien und Herzegowina",
+      "Bosnie-Herzégovine",
+      "Bosnia ed Erzegovina",
+      "Bosnia y Herzegovina"
+    ]
+  },
+  {
+    "code": "MK",
+    "name": "North Macedonia",
+    "nameDe": "Nordmazedonien",
+    "continent": "Europe",
+    "bbox": [20.463175, 40.842727, 22.952377, 42.32026],
+    "aliases": [
+      "North Macedonia",
+      "Nordmazedonien",
+      "Macédoine du Nord",
+      "Macedonia del Nord",
+      "Macedonia del Norte"
+    ]
+  },
+  {
+    "code": "RS",
+    "name": "Serbia",
+    "nameDe": "Serbien",
+    "continent": "Europe",
+    "bbox": [18.829825, 42.245224, 22.986019, 46.17173],
+    "aliases": ["Serbia", "Serbien", "Serbie", "Serbia", "Serbia"]
+  },
+  {
+    "code": "ME",
+    "name": "Montenegro",
+    "nameDe": "Montenegro",
+    "continent": "Europe",
+    "bbox": [18.450017, 41.877551, 20.3398, 43.52384],
+    "aliases": ["Montenegro", "Montenegro", "Monténégro", "Montenegro", "Montenegro"]
+  },
+  {
+    "code": "XK",
+    "name": "Kosovo",
+    "nameDe": "Kosovo",
+    "continent": "Europe",
+    "bbox": [20.0707, 41.84711, 21.77505, 43.27205],
+    "aliases": ["Kosovo", "Kosovo", "Kosovo", "Kosovo", "Kosovo"]
+  },
+  {
+    "code": "TT",
+    "name": "Trinidad and Tobago",
+    "nameDe": "Trinidad und Tobago",
+    "continent": "North America",
+    "bbox": [-61.95, 10, -60.895, 10.89],
+    "aliases": [
+      "Trinidad and Tobago",
+      "Trinidad und Tobago",
+      "Trinité-et-Tobago",
+      "Trinidad e Tobago",
+      "Trinidad y Tobago"
+    ]
+  },
+  {
+    "code": "SS",
+    "name": "South Sudan",
+    "nameDe": "Südsudan",
+    "continent": "Africa",
+    "bbox": [23.88698, 3.509172, 35.298007, 12.248008],
+    "aliases": ["South Sudan", "Südsudan", "Soudan du Sud", "Sudan del Sud", "Sudán del Sur"]
+  }
+]

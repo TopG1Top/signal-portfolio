@@ -1,0 +1,51 @@
+name: SIGNAL checks
+on: [push, pull_request]
+jobs:
+  portfolio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build:portfolio
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:portfolio
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: signal
+          POSTGRES_PASSWORD: signal-ci-only
+          POSTGRES_DB: signal
+        ports: ['5432:5432']
+        options: --health-cmd "pg_isready -U signal" --health-interval 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://signal:signal-ci-only@localhost:5432/signal
+      BETTER_AUTH_SECRET: ci-only-secret-at-least-thirty-two-characters
+      BETTER_AUTH_URL: http://127.0.0.1:3000
+      APP_ORIGIN: http://127.0.0.1:3000
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run db:migrate
+      - run: npm run db:seed
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm audit --audit-level=high
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification
+          path: test-results/

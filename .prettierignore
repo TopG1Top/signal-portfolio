@@ -1,0 +1,11 @@
+node_modules
+**/.next
+**/.next-production
+**/.next-portfolio
+**/.next-portfolio-dev
+apps/web/public
+packages/database/generated
+test-results
+playwright-report
+.data
+package-lock.json
