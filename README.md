@@ -8,6 +8,10 @@ Created by **Linhard Zejneli**. The public Vercel edition is a read-only portfol
 
 [Open the portfolio demo](https://signal-portfolio-five.vercel.app) · [Source on GitHub](https://github.com/TopG1Top/signal-portfolio)
 
+Featured on [Linhard Zejneli's project overview](https://linhard-portfolio-pro.vercel.app/projects).
+
+![SIGNAL portfolio demo showing synthetic Switzerland scenarios](docs/portfolio/SIGNAL-portfolio-desktop.png)
+
 ```powershell
 npm ci
 npm run dev:portfolio

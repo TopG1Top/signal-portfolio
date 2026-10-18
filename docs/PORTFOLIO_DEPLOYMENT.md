@@ -1,5 +1,7 @@
 # Public portfolio edition
 
+Live demo: https://signal-portfolio-five.vercel.app. Source: https://github.com/TopG1Top/signal-portfolio. Portfolio project card: https://linhard-portfolio-pro.vercel.app/projects.
+
 The public edition is intentionally read-only. Every scenario is original fictional content marked `[SYNTHETIC]`; none represents a current news report. Dates are illustrative and move with the demonstration clock. The full local edition remains available separately in the same source tree.
 
 ## Vercel settings
